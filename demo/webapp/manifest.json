@@ -1,0 +1,45 @@
+{
+	"sap.app": {
+		"id": "mlauffer.demo.openui5.model.odata.v2.odatapromise",
+		"type": "application",
+    "i18n": "i18n/i18n.properties",
+		"dataSources": {
+			"mainService": {
+				"uri": "https://cors-anywhere.herokuapp.com/https://services.odata.org/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
+    }
+	},
+	"sap.ui5": {
+		"dependencies": {
+      "minUI5Version": "1.56.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+        "openui5.model.odata.v2": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "mlauffer.demo.openui5.model.odata.v2.odatapromise.i18n.i18n"
+				}
+			},
+      "ODataModelPromise": {
+        "type": "openui5.model.odata.v2.ODataModelPromise",
+        "dataSource": "mainService",
+        "preload": true
+      }
+		},
+		"rootView": {
+			"viewName": "mlauffer.demo.openui5.model.odata.v2.odatapromise.view.App",
+			"id": "rootApp",
+			"type": "XML",
+      "async": true
+		}
+	}
+}

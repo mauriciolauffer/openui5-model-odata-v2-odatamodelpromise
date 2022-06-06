@@ -1,0 +1,13 @@
+<mvc:View controllerName="mlauffer.demo.openui5.model.odata.v2.odatapromise.controller.App" displayBlock="true"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m">
+    <Shell>
+        <App>
+            <Page id="page" title="{i18n>TITLE}">
+                <List items="{ODataModelPromise>/Customers}">
+                    <StandardListItem title="{ODataModelPromise>CustomerID}" description="{ODataModelPromise>CompanyName}"/>
+                </List>
+            </Page>
+        </App>
+    </Shell>
+</mvc:View>

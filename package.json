@@ -1,0 +1,55 @@
+{
+  "name": "openui5-model-odata-v2-odatapromise",
+  "version": "0.0.1",
+  "description": "An OpenUI5 library which extends sap.ui.model.odata.v2.ODataModel to support Promises",
+  "homepage": "https://github.com/mauriciolauffer/openui5-model-odata-v2-odatamodelpromise#readme",
+  "author": "Mauricio Lauffer",
+  "license": "MIT",
+  "keywords": [
+    "openui5",
+    "sapui5",
+    "ui5",
+    "ui5lab",
+    "model",
+    "odata",
+    "v2",
+    "promise",
+    "async"
+  ],
+  "main": "dist/resources/openui5/model/odata/v2/odatamodelpromise/library-preload.js",
+  "browser": "dist/resources/openui5/model/odata/v2/odatamodelpromise/library-preload.js",
+  "files": [
+    "dist",
+    "src",
+    "ui5.yaml"
+  ],
+  "devDependencies": {
+    "@microsoft/eslint-formatter-sarif": "^3.0.0",
+    "@openui5/ts-types": "^1.102.0",
+    "eslint": "^8.15.0",
+    "eslint-config-mlauffer-ui5": "^0.3.2",
+    "karma": "^6.3.20",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-coverage": "^2.2.0",
+    "karma-coveralls": "^2.1.0",
+    "karma-junit-reporter": "^2.0.1",
+    "karma-ui5": "^2.4.0"
+  },
+  "scripts": {
+    "start": "ui5 serve",
+    "start:dist": "ui5 serve --config ui5-dist.yaml",
+    "build": "ui5 build --clean-dest",
+    "lint": "eslint src test demo",
+    "lint:fix": "eslint src test demo --fix",
+    "lint:ci": "eslint src test -f @microsoft/eslint-formatter-sarif -o target/eslint.sarif",
+    "test": "karma start",
+    "test:ci": "karma start karma.ci.conf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauriciolauffer/openui5-model-odata-v2-odatamodelpromise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mauriciolauffer/openui5-model-odata-v2-odatamodelpromise/issues"
+  }
+}

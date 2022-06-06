@@ -1,0 +1,22 @@
+specVersion: '2.6'
+metadata:
+  name: openui5-model-odata-v2-odatapromise
+  copyright: |-
+    openui5-model-odata-v2-odatapromise
+     * (c) Copyright 2018-${currentYear} Mauricio Lauffer
+     * Licensed under the MIT license. See LICENSE file in the project root for full license information.
+type: library
+framework:
+  name: OpenUI5
+  version: 1.96.0
+  libraries:
+    - name: sap.ui.core
+      development: true
+    - name: sap.m
+      development: true
+    - name: themelib_sap_belize
+      optional: true
+builder:
+  resources:
+    excludes:
+      - "/test-resources/**"

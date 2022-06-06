@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+  <name>openui5.model.odata.v2</name>
+  <vendor>Mauricio Lauffer</vendor>
+  <version>0.0.1</version>
+  <documentation>An OpenUI5 library which extends sap.ui.model.odata.v2.ODataModel to support Promises</documentation>
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+  </dependencies>
+  <appData></appData>
+</library>
