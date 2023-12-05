@@ -2,7 +2,7 @@
 
 /*
  * openui5-model-odata-v2-odatapromise
- * (c) Copyright 2018-2022 Mauricio Lauffer
+ * (c) Copyright 2018-2023 Mauricio Lauffer
  * Licensed under the MIT license. See LICENSE file in the project root for full license information.
  */
 
@@ -12,7 +12,6 @@ sap.ui.define([
 ],
 /**
  * Module Dependencies
- *
  * @param {sap.base.Log} Log - UI5 Logger
  * @param {sap.ui.model.odata.v2.ODataModel} ODataModel - ODataModel v2
  * @returns {object} ODataModelPromise object
@@ -22,7 +21,6 @@ function(Log, ODataModel) {
 
   /**
    * OpenUI5 ODataModelPromise extends ODataModel to support Promises.
-   *
    * @author Mauricio Lauffer
    * @version 0.0.1
    * @class
@@ -38,7 +36,6 @@ function(Log, ODataModel) {
 
     /**
      * Constructor for a new ODataModelPromise.
-     *
      * @class
      * @augments sap.ui.model.odata.ODataModelPromise
      * @public
@@ -51,7 +48,6 @@ function(Log, ODataModel) {
   /**
    * Promisify sap.ui.model.odata.v2.ODataModel.create.
    * Callback parameters success and error are converted to Promise resolve and reject.
-   *
    * @param {string} sPath - Same as in sap.ui.model.odata.v2.ODataModel.create
    * @param {object} oData - Same as in sap.ui.model.odata.v2.ODataModel.create
    * @param {object} mParameters - Same as in sap.ui.model.odata.v2.ODataModel.create
@@ -72,7 +68,6 @@ function(Log, ODataModel) {
   /**
    * Promisify sap.ui.model.odata.v2.ODataModel.read.
    * Callback parameters success and error are converted to Promise resolve and reject.
-   *
    * @param {string} sPath - Same as in sap.ui.model.odata.v2.ODataModel.read
    * @param {object} mParameters - Same as in sap.ui.model.odata.v2.ODataModel.read
    * @returns {Promise<object>} Returns a Promise with sap.ui.model.odata.v2.ODataModel.read results
@@ -92,7 +87,6 @@ function(Log, ODataModel) {
   /**
    * Promisify sap.ui.model.odata.v2.ODataModel.update.
    * Callback parameters success and error are converted to Promise resolve and reject.
-   *
    * @param {string} sPath - Same as in sap.ui.model.odata.v2.ODataModel.update
    * @param {object} oData - Same as in sap.ui.model.odata.v2.ODataModel.update
    * @param {object} mParameters - Same as in sap.ui.model.odata.v2.ODataModel.update
@@ -113,7 +107,6 @@ function(Log, ODataModel) {
   /**
    * Promisify sap.ui.model.odata.v2.ODataModel.remove.
    * Callback parameters success and error are converted to Promise resolve and reject.
-   *
    * @param {string} sPath - Same as in sap.ui.model.odata.v2.ODataModel.remove
    * @param {object} mParameters - Same as in sap.ui.model.odata.v2.ODataModel.remove
    * @returns {Promise<object>} Returns a Promise with sap.ui.model.odata.v2.ODataModel.remove results
@@ -133,7 +126,6 @@ function(Log, ODataModel) {
   /**
    * Promisify sap.ui.model.odata.v2.ODataModel.callFunction.
    * Callback parameters success and error are converted to Promise resolve and reject.
-   *
    * @param {string} sFunctionName - Same as in sap.ui.model.odata.v2.ODataModel.callFunction
    * @param {object} mParameters - Same as in sap.ui.model.odata.v2.ODataModel.callFunction
    * @returns {Promise<object>} Returns a Promise with sap.ui.model.odata.v2.ODataModel.callFunction results

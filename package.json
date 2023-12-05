@@ -16,8 +16,8 @@
     "promise",
     "async"
   ],
-  "main": "dist/resources/openui5/model/odata/v2/odatamodelpromise/library-preload.js",
-  "browser": "dist/resources/openui5/model/odata/v2/odatamodelpromise/library-preload.js",
+  "main": "dist/resources/openui5/model/odata/v2/library-preload.js",
+  "browser": "dist/resources/openui5/model/odata/v2/library-preload.js",
   "files": [
     "dist",
     "src",
