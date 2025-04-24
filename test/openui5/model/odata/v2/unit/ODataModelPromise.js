@@ -1,5 +1,7 @@
 'use strict';
 
+ /* eslint-disable sonarjs/no-nested-functions */
+
 sap.ui.require([
   'sap/ui/core/util/MockServer',
   'sap/ui/model/odata/v2/ODataModel',
